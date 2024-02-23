@@ -1,0 +1,7 @@
+{
+  "name": "Actividad_Firebase",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

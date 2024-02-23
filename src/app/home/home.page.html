@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Actividad Firebase
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <ion-button (click)="encender()" expand="block" fill="clear">ON</ion-button>
+  <ion-button (click)="apagar()" expand="block" fill="clear">OFF</ion-button> -->
+  
+  <ion-grid>
+    <ion-row>
+
+      <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="3">
+        <ion-button (click)="ledState1()" [color]="ledEncendido1 ? 'danger' : 'success'">
+          <ion-icon name="power"></ion-icon>LED 1
+        </ion-button>
+      </ion-col>
+
+      <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="3">
+        <ion-button (click)="ledState2()" [color]="ledEncendido2 ? 'danger' : 'success'">
+          <ion-icon name="power"></ion-icon>LED 2
+        </ion-button>
+      </ion-col>
+  
+      <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="3">
+        <ion-button (click)="ledState3()" [color]="ledEncendido3 ? 'danger' : 'success'">
+          <ion-icon name="power"></ion-icon>LED 3
+        </ion-button>
+      </ion-col>
+
+      <ion-col >
+        <ion-button (click)="toggleAllLeds()" color="primary">
+          <ion-icon name="power"></ion-icon>ALL ON/OFF
+        </ion-button>
+      </ion-col>
+    
+    </ion-row>
+</ion-grid>
+
+
+</ion-content>
